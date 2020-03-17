@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css?family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500&display=swap");
+/* 
+#D1953F
+#5DA457
+#3D3D3D
+
+*/
+
+* {
+  font-family: "Baloo Chettan 2", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/** header */
+header {
+  height: 77px;
+  background-color: #f3f3f3;
+  position: relative;
+}
+header img {
+  cursor: pointer;
+  margin-top: 8px;
+  float: left;
+}
+/* part 1*/
+header #nav-One ul li {
+  display: inline-block;
+  line-height: 77px;
+  margin-left: 18px;
+}
+header #nav-One ul li > a {
+  font-size: 16px;
+  color: #3d3d3d;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+}
+header #nav-One ul li a:hover {
+  color: #6e7d45;
+}
+header #nav-One ul li:first-child a {
+  margin-left: 56px;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #6e7d45;
+  transition: width 0.3s;
+}
+.link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+/* part 2 */
+header .search {
+  position: absolute;
+  right: 25%;
+  top: 30%;
+}
+header .search input {
+  width: 0px;
+  /* height: 20px; */
+  padding: 4px 27px 4px 0;
+  font-size: 16px;
+  font-family: "Baloo Chettan 2", cursive;
+  outline: none;
+  border: none;
+  background: none;
+  transition: 1s all;
+}
+header .search input::placeholder {
+  color: #3d3d3d;
+  background-color: #f3f3f3;
+  font-weight: 500;
+}
+header .search input:focus {
+  color: #5d683e;
+  width: 150px;
+  font-weight: 500;
+}
+header .search img {
+  width: 20px;
+  position: absolute;
+  right: 4px;
+  top: -4px;
+}
+header #nav-Two {
+  float: right;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  margin-top: -70px;
+}
+header #nav-Two > a {
+  margin: 10px 15px;
+  font-weight: 500;
+  text-align: center;
+  color: #3d3d3d;
+}
+header #nav-Two > a:hover {
+  color: #6e7d45;
+}
+header #nav-Two > a img {
+  width: 22px;
+}
+header #nav-Two > a:nth-child(1) img {
+  width: 38px;
+  margin: 0;
+}
+header #nb-cart {
+  background: #6e7d45;
+  position: absolute;
+  top: 25%;
+  left: 18%;
+  height: 31%;
+  width: 9%;
+  border-radius: 50%;
+  font-size: 17px;
+  padding: 0px 0;
+}
+header #nb-cart p {
+  position: relative;
+  top: -4px;
+  left: 0px;
+  color: wheat;
+}
+
+/* end header */
+#main-header {
+  /* min-height: 88.3%; */
+}
+/* Slider */
+#slider {
+  height: 88.3%;
+}
+#slider article {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.slide-left,
+.slide-right {
+  top: 46%;
+  padding: 0.5rem 1rem;
+  font-family: sans-serif;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(110, 125, 69, 0.25);
+  border-radius: 50%;
+}
+.slide-left:hover,
+.slide-right:hover {
+  background-color: #6e7d45;
+}
+
+.slide-left {
+  left: 2rem;
+}
+
+.slide-right {
+  right: 2rem;
+}
+
+#slider article h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#slider article p {
+  text-align: center;
+}
+
+#slider article:nth-of-type(1) {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/19891.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slider article:nth-of-type(2) {
+  color: white;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slider article:nth-of-type(3) {
+  color: white;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slider article:nth-of-type(3) div {
+  /* z-index: -1; */
+}
+/* end slider */
+
+/* first content */
+#main-container-1 {
+  background: url("../img/background/U1.jpg");
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 99vh;
+}
+#main-container-1 h2 {
+  position: relative;
+  padding: 20px 0;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #6e7d45;
+  font-family: "Philosopher", sans-serif;
+}
+#container-1 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 94px;
+}
+.box-all {
+  position: relative;
+  width: 300px;
+  height: 500px;
+}
+.box {
+  position: relative;
+  width: 300px;
+  height: 320px;
+  background-color: #000;
+}
+.box .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.box .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 1s ease;
+}
+.box .img img .quick {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  color: black;
+  background-color: black;
+}
+
+.box .img:hover img {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+.box .content {
+  position: absolute;
+  bottom: -120px;
+  left: 10%;
+  width: 80%;
+  height: 120px;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+}
+
+.box .content h3 {
+  font-size: 19px;
+  font-family: "Palanquin", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #000;
+}
+.box .content .price {
+  margin: 0px 0 5px 0;
+  font-size: 20px;
+}
+/** button animation  */
+
+.box .content .btn {
+  background: none;
+  width: 120px;
+  height: 33px;
+  padding-bottom: 10px;
+  background: #6e7d45;
+  font-size: 17px;
+  color: white;
+  border: none;
+  font-family: "Palanquin", sans-serif;
+  border-radius: 4px;
+  transition: 0.6s;
+  overflow: hidden;
+  position: relative;
+}
+.box .content .btn :focus {
+  outline: none;
+}
+.box .content .btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+.box .content .btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255);
+  width: 50px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.box .content .btn:hover {
+  background: #6e7d45;
+  color: #fff;
+  cursor: pointer;
+}
+.box .content .btn:hover::before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 1s;
+}
+.box .content .btn:hover::after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 1s;
+}
+
+/* end content */
+/** second content  */
+#main-container-2 {
+  background: url("../img/background/U2.jpg");
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-2 {
+  min-height: 100vh;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.cover {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0px 5%;
+}
+.cover img {
+  height: 60vh;
+  margin-left: 50px;
+}
+.intro .text-prod {
+  margin: 0 5px 0 0;
+}
+.intro .text-prod h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #6e7d45;
+  font-family: "Philosopher", sans-serif;
+}
+.intro .text-prod h4 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #6e7d45;
+}
+.intro .text-prod p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Baloo Chettan 2", cursive;
+  color: #3d3d3d;
+  width: 90%;
+  text-align: justify;
+  margin: 15px 0;
+}
+.intro .btn-div {
+  margin: 20px 0;
+}
+.intro .btn-div .btn {
+  background: none;
+  width: 170px;
+  height: 35px;
+  padding-bottom: 10px;
+  border: 1px solid #6e7d45;
+  font-size: 17px;
+  color: #6e7d45;
+  font-family: "Palanquin", sans-serif;
+  border-radius: 4px;
+  transition: 0.6s;
+  overflow: hidden;
+  position: relative;
+}
+.intro .btn-div .btn:focus {
+  outline: none;
+}
+.intro .btn-div .btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+.intro .btn-div .btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255);
+  width: 50px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.intro .btn-div .btn:hover {
+  background: #6e7d45;
+  color: #fff;
+  cursor: pointer;
+}
+.intro .btn-div .btn:hover::before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 1s;
+}
+.intro .btn-div .btn:hover::after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 1s;
+}
+/* end second */
+/** footer */
+footer {
+  position: relative;
+  height: 280px;
+  background-color: #f3f3f3;
+}
+footer .content {
+  width: 100%;
+  max-width: 960px;
+  padding: 25px 50px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+footer .content > div {
+  padding-top: 10px;
+  margin: 0 100px;
+  justify-content: space-between;
+}
+footer .content div h3 {
+  font-family: "Philosopher", cursive;
+  color: #5d683e;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+footer .content div nav ul li:nth-child(1) {
+  padding: 15px 0 0 0;
+}
+footer .content div nav ul li {
+  padding: 5px 0;
+}
+footer .content div nav ul li a {
+  margin: 50px 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3d3d3d;
+}
+
+footer .content div nav ul li a:hover {
+  color: black;
+}
+
+footer .end {
+  display: flex;
+}
+footer .end > div {
+  flex: 2;
+}
+footer .end .copy h4 {
+  margin: 18px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+footer .end .payment {
+  flex: 1;
+  margin: 0 0 0 20%;
+}
+footer .end .payment ul li {
+  display: inline;
+  flex-wrap: nowrap;
+}
+footer .end .payment img {
+  width: 35px;
+  margin: 13px 4px 5px 5px;
+}
+/*  end footer */
