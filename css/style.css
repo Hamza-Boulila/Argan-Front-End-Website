@@ -75,7 +75,6 @@ header .search {
 }
 header .search input {
   width: 0px;
-  /* height: 20px; */
   padding: 4px 27px 4px 0;
   font-size: 16px;
   font-family: "Baloo Chettan 2", cursive;
@@ -182,7 +181,6 @@ header #nb-cart p {
 
 #slider article h1 {
   font-size: 2rem;
-  /* text-align: center; */
   padding: 20px 50px 13px 45px;
   font-size: 60px;
   text-transform: uppercase;
@@ -204,20 +202,21 @@ header #nb-cart p {
   margin-left: 50px;
 }
 #slider article:nth-of-type(1) .btn2 {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 10px;
 }
 
 /** button animation  */
 
 .button .btn {
   background: none;
-  width: 180px;
+  width: 190px;
   height: 38px;
   padding-bottom: 3px;
   background: #e3a64e;
   font-size: 17px;
   color: white;
   border: none;
+  text-transform: uppercase;
   font-family: "Palanquin", sans-serif;
   border-radius: 4px;
   transition: 0.6s;
@@ -228,6 +227,7 @@ header #nb-cart p {
   background: none;
   width: 180px;
   height: 38px;
+  text-transform: uppercase;
   padding-bottom: 3px;
   border: 1px solid #ec951c;
   font-size: 17px;
@@ -245,7 +245,7 @@ header #nb-cart p {
   content: "";
   display: block;
   position: absolute;
-  background: rgba(255, 255, 255);
+  background: #ffffff;
   width: 60px;
   height: 100%;
   left: 0;
@@ -269,7 +269,6 @@ header #nb-cart p {
 }
 .button .btn:hover {
   background: #ec951c;
-  /* color: #fff; */
   cursor: pointer;
 }
 .button .btn:hover::before {
@@ -360,7 +359,6 @@ header #nb-cart p {
 #main-container-1 {
   background: url("../img/background/U1.jpg");
   background-position: center;
-  /* background-attachment: fixed; */
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 99vh;
@@ -513,7 +511,6 @@ header #nb-cart p {
 #main-container-2 {
   background: url("../img/background/U2.jpg");
   background-position: center;
-  /* background-attachment: fixed; */
   background-size: cover;
   background-repeat: no-repeat;
 }
