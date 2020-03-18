@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Philosopher&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@300;400;500&display=swap");
-/* 
-#D1953F
-#5DA457
-#3D3D3D
-
-*/
 
 * {
   font-family: "Baloo Chettan 2", cursive;
@@ -152,11 +146,12 @@ header #nb-cart p {
 /* Slider */
 #slider {
   height: 88.3%;
+  background-color: #5d683e;
 }
 #slider article {
   min-height: 100%;
   display: flex;
-  justify-content: center;
+  margin: auto;
   align-items: center;
   font-family: sans-serif;
 }
@@ -187,18 +182,158 @@ header #nb-cart p {
 
 #slider article h1 {
   font-size: 2rem;
-  text-align: center;
+  /* text-align: center; */
+  padding: 20px 50px 13px 45px;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #fafafa;
+  font-family: "Philosopher", sans-serif;
+  width: 50%;
 }
 
 #slider article p {
-  text-align: center;
+  /* text-align: center; */
+  color: white;
+  padding: 0px 50px 10px;
+  text-align: justify;
+  font-size: 30px;
+  width: 45%;
 }
 
+.button {
+  margin-left: 50px;
+}
+#slider article:nth-of-type(1) .btn2 {
+  margin: 0 0 0 20px;
+}
+
+/** button animation  */
+
+.button .btn {
+  background: none;
+  width: 180px;
+  height: 38px;
+  padding-bottom: 3px;
+  background: #e3a64e;
+  font-size: 17px;
+  color: white;
+  border: none;
+  font-family: "Palanquin", sans-serif;
+  border-radius: 4px;
+  transition: 0.6s;
+  overflow: hidden;
+  position: relative;
+}
+.button .btn2 {
+  background: none;
+  width: 180px;
+  height: 38px;
+  padding-bottom: 3px;
+  border: 1px solid #ec951c;
+  font-size: 17px;
+  color: #ec951c;
+  font-family: "Palanquin", sans-serif;
+  border-radius: 4px;
+  transition: 0.6s;
+  overflow: hidden;
+  position: relative;
+}
+.button .btn:focus {
+  outline: none;
+}
+.button .btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+.button .btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255);
+  width: 50px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.button .btn:hover {
+  background: #ec951c;
+  /* color: #fff; */
+  cursor: pointer;
+}
+.button .btn:hover::before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 1s;
+}
+.button .btn:hover::after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 1s;
+}
+/*  */
+
+.button .btn2:focus {
+  outline: none;
+}
+.button .btn2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+.button .btn2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255);
+  width: 50px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.button .btn2:hover {
+  background: #e3a64e;
+  color: #fff;
+  cursor: pointer;
+}
+.button .btn2:hover::before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 1s;
+}
+.button .btn2:hover::after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 1s;
+}
+
+/*  */
 #slider article:nth-of-type(1) {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/19891.png");
-  background-position: center;
-  background-size: cover;
+  background: url("../img/Slider/unnamed.png");
+  background-position: right;
+  background-size: 50%;
   background-repeat: no-repeat;
 }
 
@@ -214,9 +349,9 @@ header #nb-cart p {
 #slider article:nth-of-type(3) {
   color: white;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/2.jpg");
-  background-position: center;
-  background-size: cover;
+    url("../img/Slider/hair-care.jpg");
+  background-position: right;
+  background-size: 50%;
   background-repeat: no-repeat;
 }
 /* end slider */
@@ -328,7 +463,7 @@ header #nb-cart p {
   overflow: hidden;
   position: relative;
 }
-.box .content .btn :focus {
+.box .content .btn:focus {
   outline: none;
 }
 .box .content .btn::before {
