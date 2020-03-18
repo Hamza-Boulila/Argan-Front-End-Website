@@ -624,7 +624,7 @@ footer {
 footer .content {
   width: 100%;
   max-width: 960px;
-  padding: 25px 50px;
+  padding: 25px 50px 20px;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -664,8 +664,8 @@ footer .end > div {
   flex: 2;
 }
 footer .end .copy h4 {
-  margin: 18px 0px;
-  font-size: 16px;
+  margin: 28px 0px 0 0;
+  font-size: 14px;
   font-weight: 400;
   text-transform: capitalize;
 }
@@ -678,7 +678,7 @@ footer .end .payment ul li {
   flex-wrap: nowrap;
 }
 footer .end .payment img {
-  width: 35px;
-  margin: 13px 4px 5px 5px;
+  width: 28px;
+  margin: 21px 4px 5px 5px;
 }
 /*  end footer */
