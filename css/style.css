@@ -354,6 +354,102 @@ header #nb-cart p {
   background-repeat: no-repeat;
 }
 /* end slider */
+/** features  */
+#features {
+  padding: 60px 0 0 0;
+  /* background: ; */
+}
+#features h2 {
+  font-size: 35px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  color: #6e7d45;
+  font-family: "Philosopher", sans-serif;
+}
+.feature-row {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-col {
+  flex-basis: 25%;
+  text-align: center;
+  clip-path: polygon(
+    58% 4%,
+    83% 21%,
+    94% 42%,
+    88% 68%,
+    80% 90%,
+    50% 100%,
+    20% 90%,
+    0% 70%,
+    5% 44%,
+    30% 13%
+  );
+  background: #5d683e;
+  padding: 40px 0px;
+  border-radius: 0px 20%;
+  transition: 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-col::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+.feature-col::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  width: 50px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.feature-col:hover {
+  background: #6e7d45;
+  cursor: pointer;
+}
+.feature-col:hover::before {
+  transform: translateX(400px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.3s;
+}
+.feature-col:hover::after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.feature-col img {
+  width: 70px;
+}
+.feature-col h4 {
+  margin-bottom: 5px;
+  padding: 0 20%;
+  font-size: 20px;
+  font-weight: 400;
+  color: #f3f3f3;
+}
+/** end features */
 
 /* first content */
 #main-container-1 {
@@ -517,7 +613,7 @@ header #nb-cart p {
 .container-2 {
   min-height: 100vh;
   display: flex;
-  margin: auto;
+  margin: 0 auto;
   align-items: center;
 }
 .cover {
