@@ -9,62 +9,75 @@
   <body>
     <header>
       <div class="wrapper">
-        <img src="./img/Logo argan.svg" alt="" />
-        <nav id="nav-One">
-          <ul>
-            <li><a class="link">Huile</a></li>
-            <li><a class="link">Produit</a></li>
-            <li><a class="link">À propos de nous</a></li>
-            <li><a class="link">Nous contacter</a></li>
-          </ul>
-        </nav>
-        <div class="search">
-          <input type="text" placeholder="Rechercher..." />
-          <img src="./img/Search.svg" alt="" />
-        </div>
-        <div id="nav-Two">
-          <a href="">
-            <div>
+        <div class="header-nav">
+          <img class="logo" src="./img/Logo argan.svg" alt="" />
+          <nav class="nav-Links">
+            <ul>
+              <li><a class="link">Huile</a></li>
+              <li><a class="link">Produit</a></li>
+              <li><a class="link">À propos de nous</a></li>
+              <li><a class="link">Nous contacter</a></li>
+            </ul>
+          </nav>
+          <div class="nav-user">
+            <a class="search">
+              <input type="text" placeholder="Rechercher..." />
+              <img src="./img/Search.svg" alt="" />
+            </a>
+            <a href="" class="basket">
               <img src="./img/basket.svg" alt="" />
               <div id="nb-cart"><p>5</p></div>
-            </div>
-          </a>
-          <a href="">
-            <div style="display: inline-flex;flex-direction: column;">
-              <img src="./img/user.svg" alt="" />
-              <span href="/" style="font-size: 17;margin: -21px 0px 0px 30px;"
-                >Connexion</span
-              >
-            </div>
-          </a>
+            </a>
+            <a href=""><button class="btn-cnx">Connexion</button></a>
+          </div>
         </div>
       </div>
     </header>
 
-    <section id="main-header">
-      <div id="slider" style="height: 615px;">
+    <section id="main-header ">
+      <div
+        id="slider"
+        style="position: relative;overflow-x: hidden;height: 505px;"
+      >
         <div class="slide-left">&#60;</div>
         <div class="slide-right">&#62;</div>
         <article>
           <div>
-            <h1>Slide 1</h1>
-            <p>The slide can have some text</p>
+            <h1>Organic Argan Oil</h1>
+            <p>
+              Argan oil is a pure and Ecocert certified oil. This deodorised
+              argan oil riched in vitamins, mineral and natural anti-oxidant.
+            </p>
+            <div class="button">
+              <button class="btn">Acheter Maintenant</button>
+              <button class="btn2">en savoir plus</button>
+            </div>
           </div>
         </article>
         <article>
           <div>
-            <h1>Slide 2</h1>
-            <p>Or a picture of a cute cat</p>
+            <h1>Organic Argan Oil</h1>
+            <p>
+              Argan oil is a pure and Ecocert certified oil. This deodorised
+              argan oil riched in vitamins, mineral and natural anti-oxidant.
+            </p>
+            <div class="button">
+              <button class="btn2">en savoir plus</button>
+            </div>
           </div>
         </article>
         <article>
           <div>
-            <h1>Slide 3</h1>
-            <p>Anything you want really</p>
+            <h1>découvrir Nos produits de qualité superieur</h1>
+            <p></p>
+            <div class="button">
+              <button class="btn2">en savoir plus</button>
+            </div>
           </div>
         </article>
       </div>
     </section>
+
     <section id="main-container-1">
       <div class="wrapper">
         <h2>
@@ -83,7 +96,7 @@
                   <span style=" text-decoration: line-through;">$60.00</span
                   >&nbsp;&nbsp;$77.77
                 </div>
-                <button class="btn btn2">Add To Cart</button>
+                <button class="btn">Ajouter au panier</button>
               </div>
             </div>
           </div>
@@ -98,7 +111,7 @@
                   <span style=" text-decoration: line-through;">$60.00</span
                   >&nbsp;&nbsp;$77.77
                 </div>
-                <button class="btn btn2">Add To Cart</button>
+                <button class="btn btn2">Ajouter au panier</button>
               </div>
             </div>
           </div>
@@ -113,47 +126,120 @@
                   <span style=" text-decoration: line-through;">$60.00</span
                   >&nbsp;&nbsp;$77.77
                 </div>
-                <button class="btn btn2">Add To Cart</button>
+                <button class="btn btn2">Ajouter au panier</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="main-container-2" class="wrapper">
-      <div class="cover">
-        <img src="./img/cream.jpg" alt="" />
-      </div>
-      <div class="intro">
-        <div class="text-prod">
-          <h2>
-            Argan Multi-Effective Hyaluronic Cream
-          </h2>
-          <h4>50 ml</h4>
-          <p>
-            For all skin types. Deeply hydrates and rejuvenates the skin,
-            protecting it from the ravages of time, as well as the adverse
-            environmental influences. Increases skin’s consistency and
-            tightening, while also offering youthful appearance.
-          </p>
-        </div>
 
-        <div class="btn-div">
-          <button class="btn">Acheter Maintenant</button>
+    <section id="features">
+      <h2 class="wrapper">
+        caractéristiques <br />
+        du argan
+      </h2>
+      <div class="feature-row">
+        <a href="" class="feature-col">
+          <img src="./img/features/bio.svg" alt="" />
+          <h4>100% pure et naturel</h4>
+        </a>
+        <a href="" class="feature-col">
+          <img src="./img/features/olive-oil.svg" alt="" />
+          <h4>D'où vient l'huile d'argan ?</h4>
+        </a>
+        <a href="" class="feature-col">
+          <img src="./img/features/hair.svg" alt="" />
+          <h4>excellent soin pour les cheveux</h4>
+        </a>
+        <a href="" class="feature-col">
+          <img src="./img/features/skin.svg" alt="" />
+          <h4>bénéfique pour la peau</h4>
+        </a>
+      </div>
+    </section>
+
+    <section id="main-container-2" class="">
+      <div class="container-2 wrapper">
+        <div class="cover">
+          <img src="./img/cream.png" alt="" />
+        </div>
+        <div class="intro">
+          <div class="text-prod">
+            <h2>
+              Argan Multi-Effective Hyaluronic Cream
+            </h2>
+            <h4>50 ml</h4>
+            <p>
+              For all skin types. Deeply hydrates and rejuvenates the skin,
+              protecting it from the ravages of time, as well as the adverse
+              environmental influences. Increases skin’s consistency and
+              tightening, while also offering youthful appearance.
+            </p>
+          </div>
+
+          <div class="btn-div">
+            <button class="btn">Acheter Maintenant</button>
+          </div>
         </div>
       </div>
     </section>
 
     <footer>
-      <div class="content">
-        <div class="logo"></div>
-        <nav>
-          <ul>
-            <li>ssssssss</li>
-            <li>ssssssss</li>
-            <li>ssssssss</li>
-          </ul>
-        </nav>
+      <div class="content wrapper">
+        <div>
+          <h3>Information</h3>
+          <nav>
+            <ul>
+              <li><a href="/">À propos de nous</a></li>
+              <li><a href="">Delivery Information</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms & conditions </a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h3>Account</h3>
+          <nav>
+            <ul>
+              <li><a href="">My Account</a></li>
+              <li><a href="">contact</a></li>
+              <li><a href="">Panier</a></li>
+              <li><a href="">Checkout</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h3>Extras</h3>
+          <nav>
+            <ul>
+              <li><a href="">Brands</a></li>
+              <li><a href="">Special</a></li>
+              <li><a href="">Offre</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="end wrapper">
+        <div class="copy">
+          <h4>all rights reserved &copy; 2020</h4>
+        </div>
+
+        <div class="payment">
+          <nav>
+            <ul>
+              <li><img src="./img/Pay icons/paypal.svg" alt="" /></li>
+              <li><img src="./img/Pay icons/visa.svg" alt="" /></li>
+              <li>
+                <img src="./img/Pay icons/american-express.svg" alt="" />
+              </li>
+              <li><img src="./img/Pay icons/discover.svg" alt="" /></li>
+              <li><img src="./img/Pay icons/mastercard.svg" alt="" /></li>
+              <li><img src="./img/Pay icons/mastercard-1.svg" alt="" /></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </footer>
 
