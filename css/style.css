@@ -148,9 +148,7 @@ header #nb-cart p {
 }
 
 /* end header */
-#main-header {
-  /* min-height: 88.3%; */
-}
+
 /* Slider */
 #slider {
   height: 88.3%;
@@ -221,10 +219,6 @@ header #nb-cart p {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-#slider article:nth-of-type(3) div {
-  /* z-index: -1; */
-}
 /* end slider */
 
 /* first content */
@@ -263,6 +257,7 @@ header #nb-cart p {
   height: 320px;
   background-color: #000;
 }
+
 .box .img {
   position: absolute;
   top: 0;
@@ -307,7 +302,7 @@ header #nb-cart p {
 
 .box .content h3 {
   font-size: 19px;
-  font-family: "Palanquin", sans-serif;
+  font-family: "Baloo Chettan 2", cursive;
   text-transform: uppercase;
   font-weight: 400;
   color: #000;
@@ -320,7 +315,7 @@ header #nb-cart p {
 
 .box .content .btn {
   background: none;
-  width: 120px;
+  width: 160px;
   height: 33px;
   padding-bottom: 10px;
   background: #6e7d45;
