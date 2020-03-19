@@ -3,40 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DEMO</title>
+    <title>Huile</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
       <div class="wrapper">
-        <img src="./img/Logo argan.svg" alt="" />
-        <nav id="nav-One">
-          <ul>
-            <li><a class="link">Huile</a></li>
-            <li><a class="link">Produit</a></li>
-            <li><a class="link">À propos de nous</a></li>
-            <li><a class="link">Nous contacter</a></li>
-          </ul>
-        </nav>
-        <div class="search">
-          <input type="text" placeholder="Rechercher..." />
-          <img src="./img/Search.svg" alt="" />
-        </div>
-        <div id="nav-Two">
-          <a href="">
-            <div>
+        <div class="header-nav">
+          <img class="logo" src="./img/Logo argan.svg" alt="" />
+          <nav class="nav-Links">
+            <ul>
+              <li><a class="link">Huile</a></li>
+              <li><a class="link">Produit</a></li>
+              <li><a class="link">À propos de nous</a></li>
+              <li><a class="link">Nous contacter</a></li>
+            </ul>
+          </nav>
+          <div class="nav-user">
+            <a class="search">
+              <input type="text" placeholder="Rechercher..." />
+              <img src="./img/Search.svg" alt="" />
+            </a>
+            <a href="" class="basket">
               <img src="./img/basket.svg" alt="" />
               <div id="nb-cart"><p>5</p></div>
-            </div>
-          </a>
-          <a href="">
-            <div style="display: inline-flex;flex-direction: column;">
-              <img src="./img/user.svg" alt="" />
-              <span href="/" style="font-size: 17;margin: -21px 0px 0px 30px;"
-                >Connexion</span
-              >
-            </div>
-          </a>
+            </a>
+            <a href=""><button class="btn-cnx">Connexion</button></a>
+          </div>
         </div>
       </div>
     </header>

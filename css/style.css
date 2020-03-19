@@ -21,36 +21,37 @@ li {
   margin: 0 auto;
   padding: 0 10px;
 }
-
-/** header */
 header {
-  height: 77px;
   background-color: #f3f3f3;
-  position: relative;
 }
-header img {
+/** header */
+.header-nav {
+  width: 100%;
+  height: 77px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
   cursor: pointer;
-  margin-top: 8px;
-  float: left;
+  margin-right: 33px;
+  margin-bottom: 5px;
 }
-/* part 1*/
-header #nav-One ul li {
+.nav-Links {
+  margin-right: 70px;
+}
+.nav-Links li {
   display: inline-block;
-  line-height: 77px;
-  margin-left: 18px;
+  margin: 0 12px;
 }
-header #nav-One ul li > a {
-  font-size: 16px;
-  color: #3d3d3d;
+.nav-Links li a {
   font-weight: 500;
+  color: #3d3d3d;
   position: relative;
   cursor: pointer;
 }
-header #nav-One ul li a:hover {
+.nav-Links li a:hover {
   color: #6e7d45;
-}
-header #nav-One ul li:first-child a {
-  margin-left: 56px;
 }
 .link::after {
   content: "";
@@ -67,14 +68,27 @@ header #nav-One ul li:first-child a {
   width: 100%;
   transition: width 0.3s;
 }
-/* part 2 */
-header .search {
-  position: absolute;
-  right: 25%;
-  top: 30%;
+
+.nav-user {
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
 }
-header .search input {
-  width: 0px;
+.nav-user .search {
+  position: relative;
+  margin: 0px 5px;
+}
+.nav-user .search img {
+  cursor: pointer;
+  width: 20px;
+  position: absolute;
+  right: 3px;
+  top: 4px;
+}
+.nav-user .search input {
+  width: 150px;
   padding: 4px 27px 4px 0;
   font-size: 16px;
   font-family: "Baloo Chettan 2", cursive;
@@ -83,63 +97,105 @@ header .search input {
   background: none;
   transition: 1s all;
 }
-header .search input::placeholder {
+.nav-user .search input::placeholder {
   color: #3d3d3d;
   background-color: #f3f3f3;
+  opacity: 0.5;
   font-weight: 500;
 }
-header .search input:focus {
+.nav-user .search input:focus {
   color: #5d683e;
   width: 150px;
   font-weight: 500;
 }
-header .search img {
-  width: 20px;
-  position: absolute;
-  right: 4px;
-  top: -4px;
-}
-header #nav-Two {
-  float: right;
-  display: flex;
-  flex-wrap: nowrap;
+.nav-user .basket {
   position: relative;
-  margin-top: -70px;
+  margin: 0 0px 0 10px;
 }
-header #nav-Two > a {
-  margin: 10px 15px;
-  font-weight: 500;
-  text-align: center;
-  color: #3d3d3d;
-}
-header #nav-Two > a:hover {
-  color: #6e7d45;
-}
-header #nav-Two > a img {
-  width: 22px;
-}
-header #nav-Two > a:nth-child(1) img {
+.nav-user .basket img {
   width: 38px;
-  margin: 0;
 }
-header #nb-cart {
+.nav-user .basket #nb-cart {
   background: #6e7d45;
   position: absolute;
-  top: 25%;
-  left: 18%;
-  height: 31%;
-  width: 9%;
+  top: 5%;
+  right: 0%;
+  height: 40%;
+  width: 45%;
   border-radius: 50%;
   font-size: 17px;
   padding: 0px 0;
 }
-header #nb-cart p {
+.nav-user .basket #nb-cart p {
   position: relative;
   top: -4px;
-  left: 0px;
+  left: 4px;
   color: wheat;
 }
 
+/** button animation  */
+.btn-cnx {
+  margin: 0 0px 0 29px;
+  background: none;
+  width: 100px;
+  height: 34px;
+  padding-bottom: 0px;
+  background: #5d683e;
+  font-size: 14px;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Palanquin", sans-serif;
+  border-radius: 4px;
+  transition: 0.6s;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-cnx:focus {
+  outline: none;
+}
+.btn-cnx::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+.btn-cnx::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255);
+  width: 50px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.btn-cnx:hover {
+  background: #6e7d45;
+  cursor: pointer;
+}
+.btn-cnx:hover::before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 1s;
+}
+.btn-cnx:hover::after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 1s;
+}
+/*  */
 /* end header */
 
 /* Slider */
@@ -190,7 +246,6 @@ header #nb-cart p {
 }
 
 #slider article p {
-  /* text-align: center; */
   color: white;
   padding: 0px 50px 10px;
   text-align: justify;
