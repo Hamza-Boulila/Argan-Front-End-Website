@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEMO</title>
+    <link rel="stylesheet" href="./css/demo.css" />
+    <link rel="stylesheet" href="./css/connexion.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="menu-toggler">
+          <div class="bar half start"></div>
+          <div class="bar"></div>
+          <div class="bar half end"></div>
+        </div>
+        <img class="logo-768" src="./img/Logo argan.svg" alt="" />
+
+        <div class="top-nav">
+          <div class="header-nav">
+            <img class="logo" src="./img/Logo argan.svg" alt="" />
+            <nav class="nav-Links">
+              <ul>
+                <li><a class="link">Huile</a></li>
+                <li><a class="link">Produit</a></li>
+                <li><a class="link">À propos de nous</a></li>
+                <li><a class="link">Nous contacter</a></li>
+              </ul>
+            </nav>
+            <div class="nav-user">
+              <a class="search">
+                <input type="text" placeholder="Rechercher..." />
+                <img src="./img/User/search.svg" alt="" />
+              </a>
+              <a href="" class="basket">
+                <img src="./img/User/shopping-bag.svg" alt="" />
+                <div id="nb-cart"><p>5</p></div>
+              </a>
+              <a href=""><button class="btn-cnx">Connexion</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container-user" id="container-user">
+        <div class="form-container sign-up-container">
+          <form action="#">
+            <h1>Create Account</h1>
+            <input class="input" type="text" placeholder="Name" />
+            <input class="input" type="email" placeholder="Email" />
+            <input class="input" type="password" placeholder="Password" />
+            <button class="btn-signin btn-user">Sign Up</button>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Sign in</h1>
+
+            <input class="input" type="email" placeholder="Email" />
+            <input class="input" type="password" placeholder="Password" />
+            <a href="#">Forgot your password?</a>
+            <button class="btn-signin btn-user">Sign In</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p class="p">
+                To keep connected with us please login with your personal info
+              </p>
+              <button class="ghost btn-signin btn-user" id="signIn">
+                Sign In
+              </button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p class="p">
+                Enter your personal details and start journey with us
+              </p>
+              <button class="ghost btn-signup btn-user" id="signUp">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="content wrapper">
+        <div>
+          <h3>Information</h3>
+          <nav>
+            <ul>
+              <li><a href="/">À propos de nous</a></li>
+              <li><a href="">Delivery Information</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms & conditions </a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h3>Account</h3>
+          <nav>
+            <ul>
+              <li><a href="">My Account</a></li>
+              <li><a href="">contact</a></li>
+              <li><a href="">Panier</a></li>
+              <li><a href="">Checkout</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h3>Extras</h3>
+          <nav>
+            <ul>
+              <li><a href="">Brands</a></li>
+              <li><a href="">Special</a></li>
+              <li><a href="">Offre</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="end wrapper">
+        <div class="copy">
+          <h4>all rights reserved &copy; 2020</h4>
+        </div>
+
+        <div class="payment">
+          <nav>
+            <ul>
+              <li><img src="./img/Pay icons/paypal.svg" alt="" /></li>
+              <li><img src="./img/Pay icons/visa.svg" alt="" /></li>
+              <li>
+                <img src="./img/Pay icons/american-express.svg" alt="" />
+              </li>
+              <li><img src="./img/Pay icons/discover.svg" alt="" /></li>
+              <li><img src="./img/Pay icons/mastercard.svg" alt="" /></li>
+              <li><img src="./img/Pay icons/mastercard-1.svg" alt="" /></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/user.js"></script>
+  </body>
+</html>
