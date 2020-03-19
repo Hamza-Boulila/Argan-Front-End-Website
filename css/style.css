@@ -682,7 +682,8 @@ header {
   margin: 0px 5%;
 }
 .cover img {
-  height: 60vh;
+  height: 82vh;
+  /* width: 100%; */
   margin-left: 50px;
 }
 .intro .text-prod {
@@ -805,6 +806,7 @@ footer .content div nav ul li a {
   margin: 50px 0;
   cursor: pointer;
   font-size: 16px;
+
   color: #3d3d3d;
 }
 
@@ -838,6 +840,35 @@ footer .end .payment img {
 }
 /*  end footer */
 
+/** contact */
+#contact {
+  background: #6e7d45;
+}
+.contact {
+  display: flex;
+  place-items: center;
+  height: 200px;
+}
+.contact-info {
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+.contact-info .contact-Icon {
+  width: 15%;
+}
+.contact-info:first-child .contact-Icon {
+  transform: rotate(-90deg);
+}
+.contact-info h3 {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+/* end contact */
 @media screen and (max-width: 1200px) {
   body.hidden {
     overflow: hidden;
@@ -988,6 +1019,11 @@ footer .end .payment img {
   #slider article p {
     padding: 0px 50px 10px;
     font-size: 22px;
+  }
+  .button .btn {
+    width: 160px;
+    height: 32px;
+    font-size: 15px;
   }
   .button .btn2 {
     width: 156px;
@@ -1179,7 +1215,6 @@ footer .end .payment img {
   }
   footer .content {
     padding: 0px;
-
     width: auto;
   }
   footer .end {

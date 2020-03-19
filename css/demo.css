@@ -22,7 +22,7 @@ li {
   padding: 0 10px;
 }
 header {
-  background-color: #f3f3f3;
+  background-color: #5d683e;
 }
 /** header */
 .header-nav {
@@ -51,12 +51,12 @@ header {
 }
 .nav-Links li a {
   font-weight: 500;
-  color: #3d3d3d;
+  color: #e6e6e6;
   position: relative;
   cursor: pointer;
 }
 .nav-Links li a:hover {
-  color: #6e7d45;
+  color: #ffffff;
 }
 .link::after {
   content: "";
@@ -66,7 +66,7 @@ header {
   display: block;
   width: 0%;
   height: 2px;
-  background: #6e7d45;
+  background: #ffffff;
   transition: width 0.3s;
 }
 .link:hover::after {
@@ -103,13 +103,13 @@ header {
   transition: 1s all;
 }
 .nav-user .search input::placeholder {
-  color: #3d3d3d;
-  background-color: #f3f3f3;
+  color: #ffffff;
+  /* background-color: #f3f3f3; */
   opacity: 0.5;
   font-weight: 500;
 }
 .nav-user .search input:focus {
-  color: #5d683e;
+  color: #fbfbfb;
   width: 150px;
   font-weight: 500;
 }
@@ -118,15 +118,15 @@ header {
   margin: 0 0px 0 10px;
 }
 .nav-user .basket img {
-  width: 38px;
+  width: 26px;
 }
 .nav-user .basket #nb-cart {
-  background: #6e7d45;
+  background: #ec951c;
   position: absolute;
-  top: 5%;
-  right: 0%;
-  height: 40%;
-  width: 45%;
+  top: -5%;
+  right: -21%;
+  height: 53%;
+  width: 64%;
   border-radius: 50%;
   font-size: 17px;
   padding: 0px 0;
@@ -145,7 +145,7 @@ header {
   width: 100px;
   height: 34px;
   padding-bottom: 0px;
-  background: #5d683e;
+  background: #ec951c;
   font-size: 14px;
   color: white;
   border: none;
@@ -187,7 +187,6 @@ header {
   transform: translateX(-100px) skewX(-15deg);
 }
 .btn-cnx:hover {
-  background: #6e7d45;
   cursor: pointer;
 }
 .btn-cnx:hover::before {
@@ -272,7 +271,7 @@ header {
   width: 190px;
   height: 38px;
   padding-bottom: 3px;
-  background: #e3a64e;
+  background: #ec951c;
   font-size: 17px;
   color: white;
   border: none;
@@ -328,7 +327,6 @@ header {
   transform: translateX(-100px) skewX(-15deg);
 }
 .button .btn:hover {
-  background: #ec951c;
   cursor: pointer;
 }
 .button .btn:hover::before {
@@ -373,7 +371,7 @@ header {
   transform: translateX(-100px) skewX(-15deg);
 }
 .button .btn2:hover {
-  background: #e3a64e;
+  background: #ec951c;
   color: #fff;
   cursor: pointer;
 }
@@ -398,20 +396,22 @@ header {
 
 #slider article:nth-of-type(2) {
   color: white;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #slider article:nth-of-type(3) {
-  color: white;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/Slider/hair-care.jpg");
-  background-position: right;
-  background-size: 50%;
-  background-repeat: no-repeat;
+  background: #ffffff;
+}
+#slider article:nth-of-type(3) h1 {
+  color: #6e7d45;
+  width: 80%;
+}
+
+#slider article:nth-of-type(3) img {
+  width: 27%;
+  margin-right: 10%;
 }
 /* end slider */
 /** features  */
@@ -682,7 +682,8 @@ header {
   margin: 0px 5%;
 }
 .cover img {
-  height: 60vh;
+  height: 82vh;
+  /* width: 100%; */
   margin-left: 50px;
 }
 .intro .text-prod {
@@ -839,6 +840,36 @@ footer .end .payment img {
 }
 /*  end footer */
 
+/** contact */
+#contact {
+  background: #6e7d45;
+  height: 200px;
+}
+.contact {
+  display: flex;
+  place-items: center;
+  height: 200px;
+}
+.contact-info {
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+.contact-info .contact-Icon {
+  width: 15%;
+}
+.contact-info:first-child .contact-Icon {
+  transform: rotate(-90deg);
+}
+.contact-info h3 {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+/* end contact */
 @media screen and (max-width: 1200px) {
   body.hidden {
     overflow: hidden;
@@ -881,7 +912,7 @@ footer .end .payment img {
   }
 
   .bar {
-    background: #5d683e;
+    background: #ec951c;
     width: 100%;
     height: 4px;
     border-radius: 0.8rem;
@@ -916,7 +947,7 @@ footer .end .payment img {
     top: 1000vh;
     left: 0;
     z-index: 50;
-    background-color: #f3f3f3;
+    background-color: #5d683e;
     border-top-right-radius: 100%;
     border-top-left-radius: 100%;
     transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -941,11 +972,12 @@ footer .end .payment img {
     display: none;
   }
   .nav-user .basket img {
-    width: 48px;
+    width: 35px;
   }
   .nav-user .basket #nb-cart p {
-    top: -3px;
+    top: -2px;
     left: 6px;
+    font-size: 18px;
   }
   .nav-user .search input {
     width: 250px;
@@ -989,6 +1021,11 @@ footer .end .payment img {
   #slider article p {
     padding: 0px 50px 10px;
     font-size: 22px;
+  }
+  .button .btn {
+    width: 160px;
+    height: 32px;
+    font-size: 15px;
   }
   .button .btn2 {
     width: 156px;
