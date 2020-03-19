@@ -838,9 +838,7 @@ footer .end .payment img {
 }
 /*  end footer */
 
-/* 750  */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   body.hidden {
     overflow: hidden;
   }
@@ -1036,6 +1034,79 @@ footer .end .payment img {
     font-size: 15px;
     color: #6e7d45;
   }
+}
+@media screen and (max-width: 768px) {
+  body.hidden {
+    overflow: hidden;
+  }
+  .wrapper {
+    width: 71%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .box-all {
+    width: 250px;
+  }
+  .box {
+    width: 250px;
+  }
+  #container-1 {
+    margin: 0 auto;
+    display: flex;
+    width: 120%;
+  }
+  .feature-col {
+    flex-basis: 50%;
+    margin: 15px 0;
+  }
+  .container-2 {
+    margin: 50px auto;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100%; */
+    width: 100%;
+  }
+
+  .cover img {
+    height: 84vh;
+  }
+  .intro {
+    margin: 0 11%;
+  }
+  .intro .text-prod h2 {
+    text-align: center;
+    font-size: 21px;
+  }
+  .intro .text-prod h4 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .intro .text-prod p {
+    font-size: 17px;
+    margin: 13px 37px;
+    text-align: center;
+  }
+  .intro .btn-div {
+    margin: 20px 37%;
+  }
+  .intro .btn-div .btn {
+    background: none;
+    width: 150px;
+    height: 31px;
+    padding-bottom: 10px;
+    border: 1px solid #6e7d45;
+    font-size: 15px;
+    color: #6e7d45;
+  }
+  .intro .btn-div .btn {
+    background: none;
+    width: 150px;
+    height: 31px;
+    padding-bottom: 10px;
+    border: 1px solid #6e7d45;
+    font-size: 15px;
+    color: #6e7d45;
+  }
   footer .content {
     padding: 10px 135px 20px;
     width: auto;
@@ -1054,5 +1125,70 @@ footer .end .payment img {
   footer .end .payment {
     flex: 5;
     margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 52%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .logo-768 {
+    display: block;
+    margin-left: -70px;
+  }
+  .container-2 {
+    margin: 42px auto;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100%; */
+    width: 100%;
+  }
+  #features h2 {
+    margin-left: 40px;
+  }
+  .cover img {
+    height: 84vh;
+  }
+  .intro {
+    margin: 0 0 0 40px;
+  }
+  .intro .text-prod h2 {
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #6e7d45;
+    font-family: "Philosopher", sans-serif;
+  }
+  .intro .text-prod h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #6e7d45;
+  }
+  .intro .text-prod p {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .intro .btn-div .btn {
+    background: none;
+    width: 150px;
+    height: 31px;
+    padding-bottom: 10px;
+    border: 1px solid #6e7d45;
+    font-size: 15px;
+    color: #6e7d45;
+  }
+  footer .content {
+    padding: 0px;
+    width: auto;
+  }
+  footer .end {
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .end .copy h4 {
+    margin: 28px 0px 21px 0;
+  }
+  footer .end .payment img {
+    margin: 5px 20px;
   }
 }
