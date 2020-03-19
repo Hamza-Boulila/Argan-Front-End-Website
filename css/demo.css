@@ -200,6 +200,15 @@ header {
   transition: 1s;
 }
 /*  */
+
+.navscroll {
+  position: sticky;
+  height: 77px;
+  top: 0;
+  background-color: #5d683e;
+  z-index: 999;
+}
+
 /* end header */
 
 /* Slider */
