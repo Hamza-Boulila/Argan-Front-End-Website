@@ -33,9 +33,14 @@ header {
   align-items: center;
 }
 .logo {
+  display: block;
   cursor: pointer;
   margin-right: 33px;
   margin-bottom: 5px;
+}
+.logo-768 {
+  display: none;
+  padding-top: 5px;
 }
 .nav-Links {
   margin-right: 70px;
@@ -832,3 +837,358 @@ footer .end .payment img {
   margin: 21px 4px 5px 5px;
 }
 /*  end footer */
+
+@media screen and (max-width: 1200px) {
+  body.hidden {
+    overflow: hidden;
+  }
+  .wrapper {
+    width: 71%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  header {
+    height: 70px;
+  }
+  .logo {
+    display: none;
+  }
+  .logo-768 {
+    display: block;
+    padding-top: 5px;
+  }
+  .nav-user .search input:focus {
+    color: #5d683e;
+    width: 250px;
+  }
+  .menu-toggler {
+    position: absolute;
+    top: 3%;
+    right: 5rem;
+    width: 2.5rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1500;
+    transition: transform 650ms ease-out;
+  }
+
+  .menu-toggler.open {
+    transform: rotate(-45deg);
+  }
+
+  .bar {
+    background: #5d683e;
+    width: 100%;
+    height: 4px;
+    border-radius: 0.8rem;
+  }
+
+  .bar.half {
+    width: 50%;
+  }
+
+  .bar.start {
+    transform-origin: right;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  }
+
+  .open .bar.start {
+    transform: rotate(-450deg) translateX(0.5rem);
+  }
+
+  .bar.end {
+    align-self: flex-end;
+    transform-origin: left;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  }
+
+  .open .bar.end {
+    transform: rotate(-450deg) translateX(-0.5rem);
+  }
+  .top-nav {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 1000vh;
+    left: 0;
+    z-index: 50;
+    background-color: #f3f3f3;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    transition: all 650ms cubic-bezier(1, 0, 0, 1);
+  }
+  .header-nav {
+    list-style: none;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .nav-user {
+    margin-right: 50px;
+    margin-bottom: 70px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .btn-cnx {
+    display: none;
+  }
+  .nav-user .basket img {
+    width: 48px;
+  }
+  .nav-user .basket #nb-cart p {
+    top: -3px;
+    left: 6px;
+  }
+  .nav-user .search input {
+    width: 250px;
+    padding: 2px 32px 2px 0;
+    font-size: 18px;
+  }
+  .nav-user .search img {
+    width: 28px;
+    right: 3px;
+    top: 0px;
+  }
+  .nav-Links {
+    margin-right: 0;
+  }
+  .nav-Links li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+  .nav-Links ul li:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0;
+  }
+  .nav-Links li a {
+    font-size: 22px;
+  }
+
+  .top-nav.open {
+    top: 0;
+    width: 100%;
+
+    border-radius: initial;
+  }
+  #slider article h1 {
+    font-size: 40px;
+    padding: 29px 50px 19px 40px;
+  }
+  #slider article p {
+    padding: 0px 50px 10px;
+    font-size: 22px;
+  }
+  .button .btn2 {
+    width: 156px;
+    height: 32px;
+    font-size: 15px;
+  }
+  .box-all {
+    width: 250px;
+  }
+  .box {
+    width: 250px;
+  }
+  #container-1 {
+    margin: 0 auto;
+    display: flex;
+    width: 120%;
+  }
+  .feature-col {
+    flex-basis: 50%;
+    margin: 15px 0;
+  }
+  .container-2 {
+    margin: 42px auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .intro .text-prod h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #6e7d45;
+    font-family: "Philosopher", sans-serif;
+  }
+  .intro .text-prod p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .intro .btn-div .btn {
+    background: none;
+    width: 150px;
+    height: 31px;
+    padding-bottom: 10px;
+    border: 1px solid #6e7d45;
+    font-size: 15px;
+    color: #6e7d45;
+  }
+}
+@media screen and (max-width: 768px) {
+  body.hidden {
+    overflow: hidden;
+  }
+  .wrapper {
+    width: 71%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .box-all {
+    width: 250px;
+  }
+  .box {
+    width: 250px;
+  }
+  #container-1 {
+    margin: 0 auto;
+    display: flex;
+    width: 120%;
+  }
+  .feature-col {
+    flex-basis: 50%;
+    margin: 15px 0;
+  }
+  .container-2 {
+    margin: 50px auto;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100%; */
+    width: 100%;
+  }
+
+  .cover img {
+    height: 84vh;
+  }
+  .intro {
+    margin: 0 11%;
+  }
+  .intro .text-prod h2 {
+    text-align: center;
+    font-size: 21px;
+  }
+  .intro .text-prod h4 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .intro .text-prod p {
+    font-size: 17px;
+    margin: 13px 37px;
+    text-align: center;
+  }
+  .intro .btn-div {
+    margin: 20px 37%;
+  }
+  .intro .btn-div .btn {
+    background: none;
+    width: 150px;
+    height: 31px;
+    padding-bottom: 10px;
+    border: 1px solid #6e7d45;
+    font-size: 15px;
+    color: #6e7d45;
+  }
+  .intro .btn-div .btn {
+    background: none;
+    width: 150px;
+    height: 31px;
+    padding-bottom: 10px;
+    border: 1px solid #6e7d45;
+    font-size: 15px;
+    color: #6e7d45;
+  }
+  footer .content {
+    padding: 10px 135px 20px;
+    width: auto;
+  }
+  footer .content > div {
+    padding-top: 10px;
+    margin: 0 30px;
+  }
+  footer {
+    height: auto;
+  }
+
+  footer .end > div {
+    flex: 5;
+  }
+  footer .end .payment {
+    flex: 5;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 52%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .logo-768 {
+    display: block;
+    margin-left: -70px;
+  }
+  .container-2 {
+    margin: 42px auto;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100%; */
+    width: 100%;
+  }
+  #features h2 {
+    margin-left: 40px;
+  }
+  .cover img {
+    height: 84vh;
+  }
+  .intro {
+    margin: 0 0 0 40px;
+  }
+  .intro .text-prod h2 {
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #6e7d45;
+    font-family: "Philosopher", sans-serif;
+  }
+  .intro .text-prod h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #6e7d45;
+  }
+  .intro .text-prod p {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .intro .btn-div .btn {
+    background: none;
+    width: 150px;
+    height: 31px;
+    padding-bottom: 10px;
+    border: 1px solid #6e7d45;
+    font-size: 15px;
+    color: #6e7d45;
+  }
+  footer .content {
+    padding: 0px;
+    width: auto;
+  }
+  footer .end {
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .end .copy h4 {
+    margin: 28px 0px 21px 0;
+  }
+  footer .end .payment img {
+    margin: 5px 20px;
+  }
+}
