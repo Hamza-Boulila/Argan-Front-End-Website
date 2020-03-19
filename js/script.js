@@ -6,14 +6,11 @@ var mySlider = new KiwwwiSlider(
 );
 // *
 $(document).ready(function() {
-  $("header .search img").click(function() {
-    $("input[type=text]").focus();
-  });
-
   //
 
   $(".menu-toggler").on("click", function() {
     $(this).toggleClass("open");
+    $("body").toggleClass("hidden");
     $(".top-nav").toggleClass("open");
   });
 
