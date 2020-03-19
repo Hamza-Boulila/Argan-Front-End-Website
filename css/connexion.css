@@ -1,4 +1,4 @@
-section {
+#container-cnx {
   box-sizing: border-box;
   background: #fff;
   display: flex;
@@ -10,7 +10,7 @@ section {
   margin: 0px 0;
 }
 
-h1 {
+.h1 {
   font-weight: bold;
   margin: 0;
 }
@@ -25,10 +25,6 @@ h2 {
   line-height: 20px;
   letter-spacing: 0.5px;
   margin: 20px 0 30px;
-}
-
-span {
-  font-size: 12px;
 }
 
 .a {
