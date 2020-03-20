@@ -206,7 +206,7 @@ header {
   height: 77px;
   top: 0;
   background-color: #5d683e;
-  z-index: 999;
+  z-index: 5;
 }
 
 /* end header */
@@ -425,7 +425,8 @@ header {
 /* end slider */
 /** features  */
 #features {
-  padding: 60px 0 0 0;
+  padding: 0px 0 70px;
+  /* height: 70vh; */
 }
 #features h2 {
   font-size: 35px;
@@ -529,7 +530,7 @@ header {
 }
 #main-container-1 h2 {
   position: relative;
-  padding: 20px 0;
+  padding: 23px 0;
   font-size: 35px;
   text-transform: uppercase;
   color: #6e7d45;
@@ -542,6 +543,7 @@ header {
   width: 100%;
   margin-top: 10px;
   margin-left: 94px;
+  margin-bottom: 15px;
 }
 .box-all {
   position: relative;
@@ -782,9 +784,8 @@ header {
 /* end second */
 /** footer */
 footer {
-  position: relative;
-  height: 280px;
-  background-color: #f3f3f3;
+  /* height: 280px; */
+  background-color: #fff;
 }
 footer .content {
   width: 100%;
@@ -845,7 +846,7 @@ footer .end .payment ul li {
 }
 footer .end .payment img {
   width: 28px;
-  margin: 21px 4px 5px 5px;
+  margin: 21px 1px 0px 5px;
 }
 /*  end footer */
 
@@ -916,6 +917,9 @@ footer .end .payment img {
     transition: transform 650ms ease-out;
   }
 
+  .menu-toggler.navscroll {
+    top: 25%;
+  }
   .menu-toggler.open {
     transform: rotate(-45deg);
   }
@@ -1081,6 +1085,33 @@ footer .end .payment img {
     font-size: 15px;
     color: #6e7d45;
   }
+  #contact {
+    background: #6e7d45;
+    height: 250px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+  .contact-info:first-child {
+    margin: 20px 0 10px 0;
+  }
+  .contact-info {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .contact-info h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+  .contact-info .contact-Icon {
+    margin-right: 5px;
+    width: 10%;
+  }
 }
 @media screen and (max-width: 768px) {
   body.hidden {
@@ -1176,7 +1207,7 @@ footer .end .payment img {
 }
 @media only screen and (max-width: 600px) {
   .wrapper {
-    width: 52%;
+    width: 51%;
     margin: 0 auto;
     padding: 0;
   }
@@ -1223,6 +1254,29 @@ footer .end .payment img {
     border: 1px solid #6e7d45;
     font-size: 15px;
     color: #6e7d45;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+  .contact-info:first-child {
+    margin: 20px 0 10px 0;
+  }
+  .contact-info {
+    /* display: flex; */
+    margin: 10px 0;
+  }
+  .contact-info h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+  .contact-info .contact-Icon {
+    margin-right: 5px;
+    width: 12%;
   }
   footer .content {
     padding: 0px;

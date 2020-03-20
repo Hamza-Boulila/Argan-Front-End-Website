@@ -22,7 +22,7 @@ li {
   padding: 0 10px;
 }
 header {
-  background-color: #f3f3f3;
+  background-color: #5d683e;
 }
 /** header */
 .header-nav {
@@ -51,12 +51,12 @@ header {
 }
 .nav-Links li a {
   font-weight: 500;
-  color: #3d3d3d;
+  color: #e6e6e6;
   position: relative;
   cursor: pointer;
 }
 .nav-Links li a:hover {
-  color: #6e7d45;
+  color: #ffffff;
 }
 .link::after {
   content: "";
@@ -66,7 +66,7 @@ header {
   display: block;
   width: 0%;
   height: 2px;
-  background: #6e7d45;
+  background: #ffffff;
   transition: width 0.3s;
 }
 .link:hover::after {
@@ -103,13 +103,13 @@ header {
   transition: 1s all;
 }
 .nav-user .search input::placeholder {
-  color: #3d3d3d;
-  background-color: #f3f3f3;
+  color: #ffffff;
+  /* background-color: #f3f3f3; */
   opacity: 0.5;
   font-weight: 500;
 }
 .nav-user .search input:focus {
-  color: #5d683e;
+  color: #fbfbfb;
   width: 150px;
   font-weight: 500;
 }
@@ -118,15 +118,15 @@ header {
   margin: 0 0px 0 10px;
 }
 .nav-user .basket img {
-  width: 38px;
+  width: 26px;
 }
 .nav-user .basket #nb-cart {
-  background: #6e7d45;
+  background: #ec951c;
   position: absolute;
-  top: 5%;
-  right: 0%;
-  height: 40%;
-  width: 45%;
+  top: -5%;
+  right: -21%;
+  height: 53%;
+  width: 64%;
   border-radius: 50%;
   font-size: 17px;
   padding: 0px 0;
@@ -145,7 +145,7 @@ header {
   width: 100px;
   height: 34px;
   padding-bottom: 0px;
-  background: #5d683e;
+  background: #ec951c;
   font-size: 14px;
   color: white;
   border: none;
@@ -187,7 +187,6 @@ header {
   transform: translateX(-100px) skewX(-15deg);
 }
 .btn-cnx:hover {
-  background: #6e7d45;
   cursor: pointer;
 }
 .btn-cnx:hover::before {
@@ -201,6 +200,15 @@ header {
   transition: 1s;
 }
 /*  */
+
+.navscroll {
+  position: sticky;
+  height: 77px;
+  top: 0;
+  background-color: #5d683e;
+  z-index: 5;
+}
+
 /* end header */
 
 /* Slider */
@@ -272,7 +280,7 @@ header {
   width: 190px;
   height: 38px;
   padding-bottom: 3px;
-  background: #e3a64e;
+  background: #ec951c;
   font-size: 17px;
   color: white;
   border: none;
@@ -328,7 +336,6 @@ header {
   transform: translateX(-100px) skewX(-15deg);
 }
 .button .btn:hover {
-  background: #ec951c;
   cursor: pointer;
 }
 .button .btn:hover::before {
@@ -373,7 +380,7 @@ header {
   transform: translateX(-100px) skewX(-15deg);
 }
 .button .btn2:hover {
-  background: #e3a64e;
+  background: #ec951c;
   color: #fff;
   cursor: pointer;
 }
@@ -398,25 +405,28 @@ header {
 
 #slider article:nth-of-type(2) {
   color: white;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #slider article:nth-of-type(3) {
-  color: white;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/Slider/hair-care.jpg");
-  background-position: right;
-  background-size: 50%;
-  background-repeat: no-repeat;
+  background: #ffffff;
+}
+#slider article:nth-of-type(3) h1 {
+  color: #6e7d45;
+  width: 80%;
+}
+
+#slider article:nth-of-type(3) img {
+  width: 27%;
+  margin-right: 10%;
 }
 /* end slider */
 /** features  */
 #features {
-  padding: 60px 0 0 0;
+  padding: 0px 0 70px;
+  /* height: 70vh; */
 }
 #features h2 {
   font-size: 35px;
@@ -520,7 +530,7 @@ header {
 }
 #main-container-1 h2 {
   position: relative;
-  padding: 20px 0;
+  padding: 23px 0;
   font-size: 35px;
   text-transform: uppercase;
   color: #6e7d45;
@@ -533,6 +543,7 @@ header {
   width: 100%;
   margin-top: 10px;
   margin-left: 94px;
+  margin-bottom: 15px;
 }
 .box-all {
   position: relative;
@@ -773,9 +784,8 @@ header {
 /* end second */
 /** footer */
 footer {
-  position: relative;
-  height: 280px;
-  background-color: #f3f3f3;
+  /* height: 280px; */
+  background-color: #fff;
 }
 footer .content {
   width: 100%;
@@ -836,13 +846,14 @@ footer .end .payment ul li {
 }
 footer .end .payment img {
   width: 28px;
-  margin: 21px 4px 5px 5px;
+  margin: 21px 1px 0px 5px;
 }
 /*  end footer */
 
 /** contact */
 #contact {
   background: #6e7d45;
+  height: 200px;
 }
 .contact {
   display: flex;
@@ -906,12 +917,15 @@ footer .end .payment img {
     transition: transform 650ms ease-out;
   }
 
+  .menu-toggler.navscroll {
+    top: 25%;
+  }
   .menu-toggler.open {
     transform: rotate(-45deg);
   }
 
   .bar {
-    background: #5d683e;
+    background: #ec951c;
     width: 100%;
     height: 4px;
     border-radius: 0.8rem;
@@ -945,8 +959,8 @@ footer .end .payment img {
     position: fixed;
     top: 1000vh;
     left: 0;
-    z-index: 50;
-    background-color: #f3f3f3;
+    z-index: 150;
+    background-color: #5d683e;
     border-top-right-radius: 100%;
     border-top-left-radius: 100%;
     transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -971,11 +985,12 @@ footer .end .payment img {
     display: none;
   }
   .nav-user .basket img {
-    width: 48px;
+    width: 35px;
   }
   .nav-user .basket #nb-cart p {
-    top: -3px;
+    top: -2px;
     left: 6px;
+    font-size: 18px;
   }
   .nav-user .search input {
     width: 250px;
@@ -1069,6 +1084,33 @@ footer .end .payment img {
     border: 1px solid #6e7d45;
     font-size: 15px;
     color: #6e7d45;
+  }
+  #contact {
+    background: #6e7d45;
+    height: 250px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+  .contact-info:first-child {
+    margin: 20px 0 10px 0;
+  }
+  .contact-info {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .contact-info h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+  .contact-info .contact-Icon {
+    margin-right: 5px;
+    width: 10%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1165,7 +1207,7 @@ footer .end .payment img {
 }
 @media only screen and (max-width: 600px) {
   .wrapper {
-    width: 52%;
+    width: 51%;
     margin: 0 auto;
     padding: 0;
   }
@@ -1212,6 +1254,29 @@ footer .end .payment img {
     border: 1px solid #6e7d45;
     font-size: 15px;
     color: #6e7d45;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+  .contact-info:first-child {
+    margin: 20px 0 10px 0;
+  }
+  .contact-info {
+    /* display: flex; */
+    margin: 10px 0;
+  }
+  .contact-info h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+  .contact-info .contact-Icon {
+    margin-right: 5px;
+    width: 12%;
   }
   footer .content {
     padding: 0px;
