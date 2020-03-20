@@ -133,8 +133,8 @@ header {
 }
 .nav-user .basket #nb-cart p {
   position: relative;
-  top: -4px;
-  left: 4px;
+  top: -5px;
+  left: 3px;
   color: wheat;
 }
 

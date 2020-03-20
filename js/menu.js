@@ -18,8 +18,8 @@ $(document).ready(function() {
       $("header").addClass("navscroll");
       if ($(window).width() < 1200) $(".menu-toggler").addClass("navscroll");
     } else {
-      $(".menu-toggler").removeClass("navscroll");
-      if ($(window).width() < 1200) $("header").removeClass("navscroll");
+      if ($(window).width() < 1200) $(".menu-toggler").removeClass("navscroll");
+      $("header").removeClass("navscroll");
     }
   });
 });
