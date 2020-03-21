@@ -10,13 +10,3 @@ signInButton.addEventListener("click", () => {
   container.classList.remove("right-panel-active");
 });
 //
-
-$(document).ready(function() {
-  window.addEventListener("scroll", function() {
-    if (window.pageYOffset > 508) {
-      $("header").addClass("navscroll");
-    } else {
-      $("header").removeClass("navscroll");
-    }
-  });
-});

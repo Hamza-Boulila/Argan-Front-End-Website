@@ -83,6 +83,7 @@ header {
 }
 .nav-user .search {
   position: relative;
+  color: #ffffff;
   margin: 0px 5px;
 }
 .nav-user .search img {
@@ -93,6 +94,7 @@ header {
   top: 4px;
 }
 .nav-user .search input {
+  color: #ffffff;
   width: 150px;
   padding: 4px 27px 4px 0;
   font-size: 16px;
@@ -100,11 +102,9 @@ header {
   outline: none;
   border: none;
   background: none;
-  transition: 1s all;
 }
 .nav-user .search input::placeholder {
   color: #ffffff;
-  /* background-color: #f3f3f3; */
   opacity: 0.5;
   font-weight: 500;
 }
@@ -1090,6 +1090,57 @@ footer .end .payment img {
     font-size: 15px;
     color: #6e7d45;
   }
+  .feature-col {
+    clip-path: polygon(
+      58% 4%,
+      83% 21%,
+      94% 42%,
+      88% 68%,
+      80% 85%,
+      47% 98%,
+      21% 90%,
+      13% 68%,
+      14% 44%,
+      30% 13%
+    );
+  }
+
+  .feature-col::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+  }
+  .feature-col::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #ffffff;
+    width: 50px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(-100px) skewX(-15deg);
+  }
+  .feature-col:hover::before {
+    transform: translateX(500px) skewX(-15deg);
+    opacity: 1;
+    transition: 0.3s;
+  }
+  .feature-col:hover::after {
+    transform: translateX(500px) skewX(-15deg);
+    opacity: 1;
+    transition: 0.3s;
+  }
   #contact {
     background: #6e7d45;
     height: 250px;
@@ -1105,7 +1156,6 @@ footer .end .payment img {
   .contact-info {
     display: flex;
     align-items: center;
-    margin: 10px 0;
   }
   .contact-info h3 {
     color: #fff;
@@ -1121,6 +1171,10 @@ footer .end .payment img {
 @media screen and (max-width: 768px) {
   body.hidden {
     overflow: hidden;
+  }
+  .logo-768 {
+    margin-left: 0%;
+    width: 12%;
   }
   .wrapper {
     width: 71%;
@@ -1276,14 +1330,14 @@ footer .end .payment img {
   .contact {
     display: flex;
     flex-direction: column;
-    /* height: 200px; */
+    height: 200px;
   }
   .contact-info:first-child {
-    margin: 40px 0 10px 0;
+    margin: 20px 0 10px 0;
   }
   .contact-info {
     /* display: flex; */
-    margin: 20px 0;
+    margin: 10px 0;
   }
   .contact-info h3 {
     color: #fff;

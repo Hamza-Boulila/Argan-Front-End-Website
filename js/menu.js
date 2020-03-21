@@ -11,7 +11,6 @@ $(document).ready(function() {
     $(".menu-toggler").removeClass("open");
     $(".top-nav").removeClass("open");
   });
-
   //
   window.addEventListener("scroll", function() {
     if (window.pageYOffset > 508) {
