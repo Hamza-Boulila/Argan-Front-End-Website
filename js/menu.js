@@ -16,10 +16,10 @@ $(document).ready(function() {
   window.addEventListener("scroll", function() {
     if (window.pageYOffset > 508) {
       $("header").addClass("navscroll");
-      if ($(window).width() < 1200) $(".menu-toggler").addClass("navscroll");
+      if ($(window).width() < 1200) $(".menu-toggler").addClass("navs");
     } else {
-      if ($(window).width() < 1200) $(".menu-toggler").removeClass("navscroll");
       $("header").removeClass("navscroll");
+      if ($(window).width() < 1200) $(".menu-toggler").removeClass("navs");
     }
   });
 });

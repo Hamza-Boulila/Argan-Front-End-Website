@@ -35,12 +35,12 @@ header {
 .logo {
   display: block;
   cursor: pointer;
-  margin-right: 33px;
-  margin-bottom: 5px;
+  margin-right: 3%;
+  margin-left: 5%;
+  width: 5%;
 }
 .logo-768 {
   display: none;
-  padding-top: 5px;
 }
 .nav-Links {
   margin-right: 70px;
@@ -133,8 +133,8 @@ header {
 }
 .nav-user .basket #nb-cart p {
   position: relative;
-  top: -5px;
-  left: 3px;
+  top: -4px;
+  left: 4px;
   color: wheat;
 }
 
@@ -226,7 +226,7 @@ header {
 
 .slide-left,
 .slide-right {
-  top: 46%;
+  top: 42%;
   padding: 0.5rem 1rem;
   font-family: sans-serif;
   font-size: 2rem;
@@ -397,12 +397,15 @@ header {
 
 /*  */
 #slider article:nth-of-type(1) {
-  background: url("../img/Slider/unnamed.png");
-  background-position: right;
-  background-size: 50%;
-  background-repeat: no-repeat;
+  background: #5d683e;
 }
-
+#slider article:nth-of-type(1) p,
+#slider article:nth-of-type(1) h1 {
+  width: 100%;
+}
+#slider article:nth-of-type(1) img {
+  margin-right: 10%;
+}
 #slider article:nth-of-type(2) {
   color: white;
   background-position: center;
@@ -897,7 +900,10 @@ footer .end .payment img {
   }
   .logo-768 {
     display: block;
-    padding-top: 5px;
+    cursor: pointer;
+    padding-top: 0.5%;
+    margin-left: 5%;
+    width: 7%;
   }
   .nav-user .search input:focus {
     color: #5d683e;
@@ -916,8 +922,7 @@ footer .end .payment img {
     z-index: 1500;
     transition: transform 650ms ease-out;
   }
-
-  .menu-toggler.navscroll {
+  .menu-toggler.navs {
     top: 25%;
   }
   .menu-toggler.open {
@@ -1212,8 +1217,9 @@ footer .end .payment img {
     padding: 0;
   }
   .logo-768 {
-    display: block;
-    margin-left: -70px;
+    padding-top: 2%;
+    margin-left: 0%;
+    width: 20%;
   }
   .container-2 {
     margin: 42px auto;
@@ -1221,6 +1227,17 @@ footer .end .payment img {
     flex-direction: column;
     /* height: 100%; */
     width: 100%;
+  }
+  .button .btn2 {
+    width: 160px;
+    height: 32px;
+    font-size: 15px;
+  }
+  #slider article:nth-of-type(2) {
+    background-color: #5d683e;
+  }
+  #slider article:nth-of-type(1) .btn2 {
+    margin: 10px 0 0 0px;
   }
   #features h2 {
     margin-left: 40px;
@@ -1259,14 +1276,14 @@ footer .end .payment img {
   .contact {
     display: flex;
     flex-direction: column;
-    height: 200px;
+    /* height: 200px; */
   }
   .contact-info:first-child {
-    margin: 20px 0 10px 0;
+    margin: 40px 0 10px 0;
   }
   .contact-info {
     /* display: flex; */
-    margin: 10px 0;
+    margin: 20px 0;
   }
   .contact-info h3 {
     color: #fff;
