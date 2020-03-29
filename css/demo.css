@@ -22,7 +22,11 @@ li {
   padding: 0 10px;
 }
 header {
-  background-color: #5d683e;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  /* background-color: #5d683e; */
 }
 /** header */
 .header-nav {
@@ -414,7 +418,7 @@ header {
 }
 
 #slider article:nth-of-type(3) {
-  background: #ffffff;
+  background: #a8a8a8;
 }
 #slider article:nth-of-type(3) h1 {
   color: #6e7d45;
